@@ -1,0 +1,63 @@
+body {
+	background-image: url("http://sweetandsoft.fr/nextdope/wp-content/uploads/2008/11/mon_petit_poney.jpg");
+}
+
+#menu, #menu ul {
+  padding:0;
+  margin:0;
+  text-align: center;
+}
+
+#menu li {
+  display:inline-block;
+  vertical-align: top;
+  position: relative;
+  background: #FFE1FF;
+}
+
+#menu li li {
+  display:inherit;
+}
+
+#menu a {
+  display:block;
+  padding:5px 50px;
+  text-decoration: none;
+  color:#193117;
+}
+
+#menu ul li a {
+  padding:5px 8px;
+}
+
+#menu ul {
+  position: absolute;
+  z-index: 1000;
+  min-width:100%;
+  text-align: left;
+}
+
+#menu ul ul {
+  left:100%;
+  top:0;
+  overflow: hidden;
+  max-width: 0;
+  min-width: 0;
+}
+
+#menu ul li:hover ul {
+  max-width: 30em;
+}
+
+#menu ul li {
+  max-height:0;
+  overflow: hidden;
+}
+
+#menu li li li {
+  max-height: inherit;
+}
+#menu li:hover li {
+  max-height: 15em;
+  overflow: visible;
+}

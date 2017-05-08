@@ -1,0 +1,1 @@
+SELECT upper(`db_vpailhe`.`fiche_personne`.`nom`) AS NOM, prenom, prix FROM `db_vpailhe`.`fiche_personne`, `db_vpailhe`.`abonnement`, `db_vpailhe`.`membre` WHERE `db_vpailhe`.`membre`.`id_fiche_perso` = `db_vpailhe`.`fiche_personne`.`id_perso` AND `db_vpailhe`.`membre`.`id_abo` = `db_vpailhe`.`abonnement`.`id_abo` AND prix > 42 ORDER BY `db_vpailhe`.`abonnement`.`nom`,prenom;

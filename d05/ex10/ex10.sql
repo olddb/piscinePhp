@@ -1,0 +1,1 @@
+SELECT titre AS 'Titre', resum AS 'Resume',`annee_prod`, genre.id_genre AS 'GENRE' FROM `db_vpailhe`.`film` INNER JOIN `db_vpailhe`.`genre` ON `db_vpailhe`.`film`.`id_genre` = `db_vpailhe`.`genre`.`id_genre` WHERE `db_vpailhe`.`genre`.nom = 'comedy' ORDER BY annee_prod DESC;

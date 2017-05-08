@@ -1,0 +1,5 @@
+<- Game --------------------------------------------------------------------`--
+turn is the current turn of a game.
+ship_list is the list of the ships needed for a game.
+init_ship set all ships in ship_list.
+---------------------------------------------------------------------- Game ->

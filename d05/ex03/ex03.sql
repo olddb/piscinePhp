@@ -1,0 +1,1 @@
+INSERT INTO `db_vpailhe`.`ft_table` (`login`, `groupe`, `date_de_creation`) SELECT `nom`, "other", DATE(`date_naissance`) FROM `db_vpailhe`.`fiche_personne` WHERE LENGTH(nom) < 9 AND nom LIKE '%a%' ORDER BY nom LIMIT 10;
